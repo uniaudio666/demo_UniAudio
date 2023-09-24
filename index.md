@@ -1,13 +1,6 @@
-# <center> UniAudio: Towards Universal Audio Generation with Audio Language Models </center>
+# <center> UniAudio: A Foundation Audio Language Model Toward Universal Audio Generation </center>
 
-<!-- <center> Dongchao Yang*<sup>1</sup>, Jinchuan Tian*<sup>2</sup></center> 
- 
-<center> 1 Chinese University of Hong Kong </center>
-<center> 2 CMU </center> -->
-<!-- <center> 3 Microsoft </center>
-<center> 4 Zhejiang University </center> -->
 <center> anonymous </center>
-
 
 ## Abstract
 Language models (LMs) have been proven a promising scheme for generative tasks in multiple domains (e.g., text and audio) and have shown strong capability to handle various tasks simultaneously. 
@@ -189,9 +182,4 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 | 壤塘县的乡镇有什么 | <audio src="zero_shot_tts/chinese/sing_SSB0851_SSB08510143_sampling_sample3.wav" controls preload></audio> |
 | 但并不是每家公司的所有产品都会被影响 | <audio src="zero_shot_tts/chinese/sing_SSB0851_SSB08510144_sampling_sample0.wav" controls preload></audio> |
 | 恐怖片的电影有什么 | <audio src="zero_shot_tts/chinese/sing_SSB0851_SSB08510164_sampling_sample0.wav" controls preload></audio> |
-
-
-## Links
-
-<!-- [[Paper]()] [[Codec]()] [[Demo GitHub]()] [[CUHK]()] [[Microsoft]()] [[CMU]() [[ZJU]()] -->
 
