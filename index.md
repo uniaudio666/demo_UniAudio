@@ -1,16 +1,10 @@
-# <center> UniAudio: A Foundation Audio Language Model Toward Universal Audio Generation </center>
+# <center> UniAudio: An Audio Foundation Model Toward Universal Audio Generation </center>
 
 <center> anonymous </center>
 
 ## Abstract
-Language models (LMs) have been proven a promising scheme for generative tasks in multiple domains (e.g., text and audio) and have shown strong capability to handle various tasks simultaneously. 
-Unlike prior works on audio generation tasks that are commonly task-specific, this paper presents UniAudio, which leverages LM techniques to generate multiple types of audio (speech, sound, music and singing) conditioned on various input modalities.
-In UniAudio, audio of all types, along with all other input modalities, are first tokenized. Then all considered audio generation tasks are uniformly formulated as condition-target pairs, which are further represented as spliced sequences that can be processed by LMs.
-Besides, a multi-scale Transformer model is proposed to alleviate the overly long sequence problem caused by the adoption of neural codec. Experimentally, the training of UniAudio is scaled up to 165K hours of audio and 1B parameters.
-UniAudio is primarily trained on 7 generative tasks, which helps to obtain sufficient prior knowledge not only in the intrinsic properties of audio but also the interrelationship between audio and other modalities.
-Thus, the trained UniAudio model has the potential to become a foundation model for universal audio generation: it shows strong capability in all primary tasks and can seamlessly support unseen audio generation tasks after simple fine-tuning.
-After fine-tuning over 4 unseen tasks, the versatile UniAudio achieves competitive results on all 11 tasks and even obtains state-of-the-art performance on most tasks. 
-Demo, code and checkpoints are released.
+Language models (LMs) have demonstrated the capability to handle a variety of generative tasks. This paper presents the UniAudio system, which, unlike prior task-specific approaches, leverages LMs techniques to generate multiple types of audio (including speech, sounds, music, and singing) with given input conditions. 
+UniAudio 1) first tokenizes all types of target audio along with other condition modalities, 2) concatenates source-target pair as a single sequence, and 3) performs next-token prediction using LMs. Also, a multi-scale Transformer model is proposed to handle the overly long sequences caused by the residual vector quantization based neural codec in tokenization. Training of UniAudio is scaled up to 165K hours of audio and 1B parameters, based on all generative tasks, aiming to obtain sufficient prior knowledge not only in the intrinsic properties of audio but also the inter-relationship between audio and other modalities. Therefore, the trained UniAudio model has the potential to become a foundation model for universal audio generation: it shows strong capability in all trained tasks and can seamlessly support new audio generation tasks after simple fine-tuning. Experiments demonstrate that UniAudio achieves state-of-the-art or at least competitive results on most of the 11 tasks. Demo and code are released.
 
 ## Introduction
 The overview of UniAudio as following picture shows.
@@ -20,7 +14,7 @@ The task comparison between previous works.
 In the following, we will show some generated samples by our proposed method. 
 
 ## Zero-shot TTS.
-In the following, we first show some case in LibriTTS test clean set. To make our results can be reproduced, we will release all of the generated LibriTTS clean set in the github.
+In the following, we first show some case in LibriTTS test clean set. To make our results can be reproduced, we will release all of the generated LibriTTS clean set in the google drive.
 
 | <center>  Content (The transcirption of the target audio) </center> | <center> Prompt </center> | <center> Generated Speech </center>| <center> GT Speech </center>|
 | -----------------------     |  -----------   | ------ | ----- |-------|
@@ -142,7 +136,7 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 | someone is playing a high pitched melody on a steel drum. The file is of poor audio-quality. | <audio src="music/gen/-3Kv4fdm7Uk.wav" controls preload></audio> |
 | The pop rock music features a male voice singing. An electric guitar with a distortion effect on plays plays two chords every two measures. The drums play a strong rhythm and together with a synth bass drive the pulse of the music. | <audio src="music/gen/-hSMzrWZCAE.wav" controls preload></audio> |
 | The low quality recording features a live performance of loud steel pans melody over playback instrumental that consists of shimmering hi hats, open hats and "4 on the floor" kick pattern. There are some crowd talking noises in the background. It sounds exotic and energetic. | <audio src="music/gen/0bvPjMQ_WbE.wav" controls preload></audio> |
-| This is a pop music piece. The words are being sung by two vocals: one male and one female which lead to a duet for the chorus. There is a banjo and an electric guitar playing the melody while a simple electronic drum beat provides the rhythmic background for the song. It is a slightly melodic and emotional song. This piece could be used in the soundtrack of a romantic drama during a flashback scene. | <audio src="music/gen/0bvPjMQ_WbE.wav" controls preload></audio> |
+| This is a pop music piece. The words are being sung by two vocals: one male and one female which lead to a duet for the chorus. There is a banjo and an electric guitar playing the melody while a simple electronic drum beat provides the rhythmic background for the song. It is a slightly melodic and emotional song. This piece could be used in the soundtrack of a romantic drama during a flashback scene. | <audio src="music/gen/2U8Dvh7nwFI.wav" controls preload></audio> |
 
 ## Instructed TTS
 
@@ -158,8 +152,13 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 | <center> Instruction </center> | <center> Source Audio </center> | <center> Generated Audio </center>| 
 | -----------     |  -----------     |
 | Add: loud roar of traffic in the background | <audio src="A_edit/Audit_audio_edit_add_132_input1.wav" controls preload></audio> | <audio src="A_edit/Audit_audio_edit_add_132_sampling_sample0.wav" controls preload></audio> | 
-| drop: a pig oinks loudly | <audio src="A_edit/Audit_audio_edit_drop_7_input1.wav" controls preload></audio> | <audio src="A_edit/Audit_audio_edit_drop_7_sampling_sample0.wav" controls preload></audio> | 
+| Add: a helicopters' engine is running in the background | <audio src="A_edit/gen/Audit_audio_edit_add_142_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_add_142_sampling_sample3.wav" controls preload></audio> | 
+| drop: birds chirping, wings flap | <audio src="A_edit/gen/Audit_audio_edit_drop_151_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_drop_151_sampling_sample0.wav" controls preload></audio> | 
+| Drop:a motorcycle idles nearby at moderate speed | <audio src="A_edit/gen/Audit_audio_edit_drop_273_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_drop_273_sampling_sample0.wav" controls preload></audio> | 
 | super resolution: A clock is ringing a bell | <audio src="A_edit/Audit_audio_edit_super_290_input1.wav" controls preload></audio> | <audio src="A_edit/Audit_audio_edit_super_290_sampling_sample0.wav" controls preload></audio> | 
+| super resolution: A clock is chiming | <audio src="A_edit/gen/Audit_audio_edit_super_14_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_super_14_sampling_sample0.wav" controls preload></audio> | 
+| Super resolution: Man speaking with water sounds | <audio src="A_edit/gen/Audit_audio_edit_super_253_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_super_253_sampling_sample0.wav" controls preload></audio> | 
+
 
 ## Speech dereverberation
 
@@ -172,6 +171,15 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 | <audio src="RIR/Speech_RIR_simulate_ris_test81_input0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test81_sampling_sample0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test81_input1.wav" controls preload></audio> |
 
 ## Speech Edit
+
+| <center> Content </center> | <center> Instruction </center> | <center> Generated Speech </center> | <center> Original Audio </center>| 
+| -----------     |  -----------     |
+| Please wait for me, Marie," Emil coaxed. | delete the word 'for' | <audio src="speech_edit_sample/gen/237_134493_000009_000001.wav" controls preload></audio> | <audio src="speech_edit_sample/org/237_134493_000009_000001.wav" controls preload></audio> | 
+| He is called, as you know, the apostle of the Indies. | replace the word "called" as "named" | <audio src="speech_edit_sample/gen/1089_134686_000032_000004.wav" controls preload></audio> | <audio src="speech_edit_sample/org/1089_134686_000032_000004.wav" controls preload></audio> | 
+| It is thou that must tell me! | delete the word 'tell' | <audio src="speech_edit_sample/gen/1221_135766_000027_000002.wav" controls preload></audio> | <audio src="speech_edit_sample/org/1221_135766_000027_000002.wav" controls preload></audio> | 
+| Bartley leaned over her shoulder, without touching her, and whispered in her | replace the word shoulder as  'feet' | <audio src="speech_edit_sample/gen/4446_2273_000051_000000.wav" controls preload></audio> | <audio src="speech_edit_sample/org/4446_2273_000051_000000.wav" controls preload></audio> | 
+| He had three flies on his cast, and, because in these waters there was always | insert a word 'large' after 'waters' | <audio src="speech_edit_sample/gen/7176_88083_000020_000001.wav" controls preload></audio> | <audio src="speech_edit_sample/org/7176_88083_000020_000001.wav" controls preload></audio> | 
+| They could see that a conflict meant serious results | insert a word 'many' after 'meant' | <audio src="speech_edit_sample/gen/7729_102255_000012_000006.wav" controls preload></audio> | <audio src="speech_edit_sample/org/7729_102255_000012_000006.wav" controls preload></audio> | 
 
 ## Chinese TTS 
 
