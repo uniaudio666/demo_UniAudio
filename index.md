@@ -171,11 +171,19 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 | <audio src="RIR/Speech_RIR_simulate_ris_test48_input0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test48_sampling_sample0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test48_input1.wav" controls preload></audio> |
 | <audio src="RIR/Speech_RIR_simulate_ris_test81_input0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test81_sampling_sample0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test81_input1.wav" controls preload></audio> |
 
+
+<style>
+.audio-player {
+  width: 100px;
+}
+</style>
+
+
 ## Speech Edit
 
 | <center> Content <img width=500/> </center> | <center> Instruction </center> | <center> Generated Speech </center> | <center> Original Audio </center>| 
 | -----------     |  -----------     |
-| Please wait for me, Marie," Emil coaxed. | delete the word 'for' | <audio src="speech_edit_sample/gen/237_134493_000009_000001.wav" controls preload></audio> | <audio src="speech_edit_sample/org/237_134493_000009_000001.wav" controls preload></audio> | 
+| Please wait for me, Marie," Emil coaxed. | delete the word 'for' | <audio class="audio-player" src="speech_edit_sample/gen/237_134493_000009_000001.wav" controls preload></audio> | <audio src="speech_edit_sample/org/237_134493_000009_000001.wav" controls preload></audio> | 
 | He is called, as you know, the apostle of the Indies. | replace the word "called" as "named" | <audio src="speech_edit_sample/gen/1089_134686_000032_000004.wav" controls preload></audio> | <audio src="speech_edit_sample/org/1089_134686_000032_000004.wav" controls preload></audio> | 
 | It is thou that must tell me! | delete the word 'tell' | <audio src="speech_edit_sample/gen/1221_135766_000027_000002.wav" controls preload></audio> | <audio src="speech_edit_sample/org/1221_135766_000027_000002.wav" controls preload></audio> | 
 | Bartley leaned over her shoulder, without touching her, and whispered in her | replace the word "shoulder" as  "feet" | <audio src="speech_edit_sample/gen/4446_2273_000051_000000.wav" controls preload></audio> | <audio src="speech_edit_sample/org/4446_2273_000051_000000.wav" controls preload></audio> | 
