@@ -18,6 +18,9 @@ In the following, we will show some generated samples by our proposed method.
 .audio-player {
   width: 200px;
 }
+.audio-player2 {
+  width: 150px;
+}
 </style>
 
 ## Zero-shot TTS.
@@ -25,11 +28,11 @@ In the following, we first show some case in LibriTTS test clean set. To make ou
 
 | <center>  Content (The transcirption of the target audio) </center> | <center> Prompt </center> | <center> Generated Speech </center>| <center> GT Speech </center>|
 | -----------------------     |  -----------   | ------ | ----- |-------|
-| IT IS SIXTEEN YEARS SINCE JOHN BERGSON DIED    | <audio class="audio-player" src="zero_shot_tts/ref/tts_237-126133-0024.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_237-134493-0000.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gt/tts_237-134493-0000.wav" controls preload></audio> |
-| IF A LAYMAN IN GIVING BAPTISM POUR THE WATER BEFORE SAYING THE WORDS IS THE CHILD BAPTIZED | <audio class="audio-player" src="zero_shot_tts/ref/tts_1188-133604-0004.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_1089-134686-0021.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gt/tts_1089-134686-0021.wav" controls preload></audio> |
-| THAT IS ONE REASON YOU ARE OJO THE UNLUCKY SAID THE WOMAN IN A SYMPATHETIC TONE | <audio class="audio-player" src="zero_shot_tts/ref/tts_1284-1180-0001.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_1284-1180-0024.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gt/tts_1284-1180-0024.wav" controls preload></audio> |
-| THE DEWS WERE SUFFERED TO EXHALE AND THE SUN HAD DISPERSED THE MISTS AND WAS SHEDDING A STRONG AND CLEAR LIGHT IN THE FOREST WHEN THE TRAVELERS RESUMED THEIR JOURNEY | <audio class="audio-player" src="zero_shot_tts/ref/1320_122612_000001_000000.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_1320-122612-0001.wav" controls preload></audio> | <audio  class="audio-player" src="zero_shot_tts/gt/tts_1320-122612-0001.wav" controls preload></audio> |
-| BY THIS TIME LORD CHELFORD AND WYLDER RETURNED AND DISGUSTED RATHER WITH MYSELF I RUMINATED ON MY WANT OF GENERAL SHIP | <audio class="audio-player" src="zero_shot_tts/ref/5683_32865_000001_000000.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_5683-32866-0004.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gt/tts_5683-32866-0004.wav" controls preload></audio> |
+| IT IS SIXTEEN YEARS SINCE JOHN BERGSON DIED    | <audio class="audio-player2" src="zero_shot_tts/ref/tts_237-126133-0024.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gen/tts_237-134493-0000.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gt/tts_237-134493-0000.wav" controls preload></audio> |
+| IF A LAYMAN IN GIVING BAPTISM POUR THE WATER BEFORE SAYING THE WORDS IS THE CHILD BAPTIZED | <audio class="audio-player2" src="zero_shot_tts/ref/tts_1188-133604-0004.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gen/tts_1089-134686-0021.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gt/tts_1089-134686-0021.wav" controls preload></audio> |
+| THAT IS ONE REASON YOU ARE OJO THE UNLUCKY SAID THE WOMAN IN A SYMPATHETIC TONE | <audio class="audio-player2" src="zero_shot_tts/ref/tts_1284-1180-0001.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gen/tts_1284-1180-0024.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gt/tts_1284-1180-0024.wav" controls preload></audio> |
+| THE DEWS WERE SUFFERED TO EXHALE AND THE SUN HAD DISPERSED THE MISTS AND WAS SHEDDING A STRONG AND CLEAR LIGHT IN THE FOREST WHEN THE TRAVELERS RESUMED THEIR JOURNEY | <audio class="audio-player2" src="zero_shot_tts/ref/1320_122612_000001_000000.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gen/tts_1320-122612-0001.wav" controls preload></audio> | <audio  class="audio-player2" src="zero_shot_tts/gt/tts_1320-122612-0001.wav" controls preload></audio> |
+| BY THIS TIME LORD CHELFORD AND WYLDER RETURNED AND DISGUSTED RATHER WITH MYSELF I RUMINATED ON MY WANT OF GENERAL SHIP | <audio class="audio-player2" src="zero_shot_tts/ref/5683_32865_000001_000000.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gen/tts_5683-32866-0004.wav" controls preload></audio> | <audio class="audio-player2" src="zero_shot_tts/gt/tts_5683-32866-0004.wav" controls preload></audio> |
 
 ### Cloning famous person's voice 
 In the following, we try to using 3 seconds prompt from three famous person: Theresa May, Barack Obama and Taylor Swift, and using their voice to read some text content (randomly choose from LibriTTS).
