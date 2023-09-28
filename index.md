@@ -172,8 +172,8 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 
 ## Speech Edit
 
-| <center> Content </center> | <center> Instruction </center> | <center> Generated Speech </center> | <center> Original Audio </center>| 
-| --- | ---｜---｜---|
+| <center> Content &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </center> | <center> Instruction </center> | <center> Generated Speech </center> | <center> Original Audio </center>| 
+| -----------     |  -----------     |
 | Please wait for me, Marie," Emil coaxed. | delete the word 'for' | <audio src="speech_edit_sample/gen/237_134493_000009_000001.wav" controls preload></audio> | <audio src="speech_edit_sample/org/237_134493_000009_000001.wav" controls preload></audio> | 
 | He is called, as you know, the apostle of the Indies. | replace the word "called" as "named" | <audio src="speech_edit_sample/gen/1089_134686_000032_000004.wav" controls preload></audio> | <audio src="speech_edit_sample/org/1089_134686_000032_000004.wav" controls preload></audio> | 
 | It is thou that must tell me! | delete the word 'tell' | <audio src="speech_edit_sample/gen/1221_135766_000027_000002.wav" controls preload></audio> | <audio src="speech_edit_sample/org/1221_135766_000027_000002.wav" controls preload></audio> | 
