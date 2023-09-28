@@ -14,47 +14,53 @@ The task comparison between previous works.
 ![The task](fig/task.png)
 In the following, we will show some generated samples by our proposed method. 
 
+<style>
+.audio-player {
+  width: 200px;
+}
+</style>
+
 ## Zero-shot TTS.
 In the following, we first show some case in LibriTTS test clean set. To make our results can be reproduced, we will release all of the generated LibriTTS clean set in the google drive.
 
 | <center>  Content (The transcirption of the target audio) </center> | <center> Prompt </center> | <center> Generated Speech </center>| <center> GT Speech </center>|
 | -----------------------     |  -----------   | ------ | ----- |-------|
-| IT IS SIXTEEN YEARS SINCE JOHN BERGSON DIED    | <audio src="zero_shot_tts/ref/tts_237-126133-0024.wav" controls preload></audio> | <audio src="zero_shot_tts/gen/tts_237-134493-0000.wav" controls preload></audio> | <audio src="zero_shot_tts/gt/tts_237-134493-0000.wav" controls preload></audio> |
-| IF A LAYMAN IN GIVING BAPTISM POUR THE WATER BEFORE SAYING THE WORDS IS THE CHILD BAPTIZED | <audio src="zero_shot_tts/ref/tts_1188-133604-0004.wav" controls preload></audio> | <audio src="zero_shot_tts/gen/tts_1089-134686-0021.wav" controls preload></audio> | <audio src="zero_shot_tts/gt/tts_1089-134686-0021.wav" controls preload></audio> |
-| THAT IS ONE REASON YOU ARE OJO THE UNLUCKY SAID THE WOMAN IN A SYMPATHETIC TONE | <audio src="zero_shot_tts/ref/tts_1284-1180-0001.wav" controls preload></audio> | <audio src="zero_shot_tts/gen/tts_1284-1180-0024.wav" controls preload></audio> | <audio src="zero_shot_tts/gt/tts_1284-1180-0024.wav" controls preload></audio> |
-| THE DEWS WERE SUFFERED TO EXHALE AND THE SUN HAD DISPERSED THE MISTS AND WAS SHEDDING A STRONG AND CLEAR LIGHT IN THE FOREST WHEN THE TRAVELERS RESUMED THEIR JOURNEY | <audio src="zero_shot_tts/ref/1320_122612_000001_000000.wav" controls preload></audio> | <audio src="zero_shot_tts/gen/tts_1320-122612-0001.wav" controls preload></audio> | <audio src="zero_shot_tts/gt/tts_1320-122612-0001.wav" controls preload></audio> |
-| BY THIS TIME LORD CHELFORD AND WYLDER RETURNED AND DISGUSTED RATHER WITH MYSELF I RUMINATED ON MY WANT OF GENERAL SHIP | <audio src="zero_shot_tts/ref/5683_32865_000001_000000.wav" controls preload></audio> | <audio src="zero_shot_tts/gen/tts_5683-32866-0004.wav" controls preload></audio> | <audio src="zero_shot_tts/gt/tts_5683-32866-0004.wav" controls preload></audio> |
+| IT IS SIXTEEN YEARS SINCE JOHN BERGSON DIED    | <audio class="audio-player" src="zero_shot_tts/ref/tts_237-126133-0024.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_237-134493-0000.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gt/tts_237-134493-0000.wav" controls preload></audio> |
+| IF A LAYMAN IN GIVING BAPTISM POUR THE WATER BEFORE SAYING THE WORDS IS THE CHILD BAPTIZED | <audio class="audio-player" src="zero_shot_tts/ref/tts_1188-133604-0004.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_1089-134686-0021.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gt/tts_1089-134686-0021.wav" controls preload></audio> |
+| THAT IS ONE REASON YOU ARE OJO THE UNLUCKY SAID THE WOMAN IN A SYMPATHETIC TONE | <audio class="audio-player" src="zero_shot_tts/ref/tts_1284-1180-0001.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_1284-1180-0024.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gt/tts_1284-1180-0024.wav" controls preload></audio> |
+| THE DEWS WERE SUFFERED TO EXHALE AND THE SUN HAD DISPERSED THE MISTS AND WAS SHEDDING A STRONG AND CLEAR LIGHT IN THE FOREST WHEN THE TRAVELERS RESUMED THEIR JOURNEY | <audio class="audio-player" src="zero_shot_tts/ref/1320_122612_000001_000000.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_1320-122612-0001.wav" controls preload></audio> | <audio  class="audio-player" src="zero_shot_tts/gt/tts_1320-122612-0001.wav" controls preload></audio> |
+| BY THIS TIME LORD CHELFORD AND WYLDER RETURNED AND DISGUSTED RATHER WITH MYSELF I RUMINATED ON MY WANT OF GENERAL SHIP | <audio class="audio-player" src="zero_shot_tts/ref/5683_32865_000001_000000.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gen/tts_5683-32866-0004.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/gt/tts_5683-32866-0004.wav" controls preload></audio> |
 
 ### Cloning famous person's voice 
 In the following, we try to using 3 seconds prompt from three famous person: Theresa May, Barack Obama and Taylor Swift, and using their voice to read some text content (randomly choose from LibriTTS).
 
 | <center> Name </center> | <center> Content (The transcirption of the target audio) </center> | <center> Prompt </center>| <center> Generated Speech </center>|
 | -----------     |  -----------     |
-| Barack Obama | YOUNG HAD BEEN COMMANDED TO HIS MOTHER'S CHAMBER SO SOON AS HE HAD COME OUT FROM HIS CONVERSE WITH THE SQUIRE | <audio src="zero_shot_tts/famous/obama/obama.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/obama/tts_61-70970-0000_sampling_sample0.wav" controls preload></audio> |
-| Barack Obama | I CANNOT ALLOW THE EXAMINATION TO BE HELD IF ONE OF THE PAPERS HAS BEEN TAMPERED WITH THE SITUATION MUST BE FACED | <audio src="zero_shot_tts/famous/obama/obama.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/obama/tts_1580-141084-0008_sampling_sample0.wav" controls preload></audio> |
-| Barack Obama | MUCH LATER WHEN A FRIEND OF HIS WAS PREPARING AN EDITION OF ALL HIS LATIN WORKS HE REMARKED TO HIS HOME CIRCLE IF I HAD MY WAY ABOUT IT THEY WOULD REPUBLISH ONLY THOSE OF MY BOOKS WHICH HAVE DOCTRINE MY GALATIANS FOR INSTANCE | <audio src="zero_shot_tts/famous/obama/obama.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/obama/tts_2830-3979-0007_sampling_sample0.wav" controls preload></audio> |
-| Barack Obama | GRAM ROUGHLY ONE TWENTY EIGHTH OF AN OUNCE | <audio src="zero_shot_tts/famous/obama/obama.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/obama/tts_8463-294825-0015_sampling_sample0.wav" controls preload></audio> |
-| Theresa May | HE GAVE WAY TO THE OTHERS VERY READILY AND RETREATED UNPERCEIVED BY THE SQUIRE AND MISTRESS FITZOOTH TO THE REAR OF THE TENT | <audio src="zero_shot_tts/famous/May/tts_61-70968-0011_input1.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/May/tts_61-70968-0011_sampling_sample0.wav" controls preload></audio> |
-| Theresa May | IF FOR A WHIM YOU BEGGAR YOURSELF I CANNOT STAY YOU | <audio src="zero_shot_tts/famous/May/tts_61-70968-0011_input1.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/May/tts_61-70970-0003_sampling_sample0.wav" controls preload></audio> |
-| Taylor Swift | YOUNG FITZOOTH HAD BEEN COMMANDED TO HIS MOTHER'S CHAMBER SO SOON AS HE HAD COME OUT FROM HIS CONVERSE WITH THE SQUIRE | <audio src="zero_shot_tts/famous/ts/tts_8555-284449-0020_input1.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/ts/tts_61-70970-0000_sampling_sample0.wav" controls preload></audio> |
-| Taylor Swift | HE WAS IN DEEP CONVERSE WITH THE CLERK AND ENTERED THE HALL HOLDING HIM BY THE ARM | <audio src="zero_shot_tts/famous/ts/tts_8555-284449-0020_input1.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/ts/tts_61-70970-0007_sampling_sample0.wav" controls preload></audio> |
-| Taylor Swift | REST AND BE STILL UNTIL I WARN YOU | <audio src="zero_shot_tts/famous/ts/tts_8555-284449-0020_input1.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/ts/tts_61-70970-0017_sampling_sample0.wav" controls preload></audio> |
-| Taylor Swift | THE COMBINED BANDS OF BOTH THE COUNTRIES PLAYED THE MUSIC AND A FINE SUPPER WAS SERVED | <audio src="zero_shot_tts/famous/ts/tts_8555-284449-0020_input1.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/ts/tts_8555-284449-0020_sampling_sample0.wav" controls preload></audio> |
+| Barack Obama | YOUNG HAD BEEN COMMANDED TO HIS MOTHER'S CHAMBER SO SOON AS HE HAD COME OUT FROM HIS CONVERSE WITH THE SQUIRE | <audio class="audio-player" src="zero_shot_tts/famous/obama/obama.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/obama/tts_61-70970-0000_sampling_sample0.wav" controls preload></audio> |
+| Barack Obama | I CANNOT ALLOW THE EXAMINATION TO BE HELD IF ONE OF THE PAPERS HAS BEEN TAMPERED WITH THE SITUATION MUST BE FACED | <audio class="audio-player" src="zero_shot_tts/famous/obama/obama.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/obama/tts_1580-141084-0008_sampling_sample0.wav" controls preload></audio> |
+| Barack Obama | MUCH LATER WHEN A FRIEND OF HIS WAS PREPARING AN EDITION OF ALL HIS LATIN WORKS HE REMARKED TO HIS HOME CIRCLE IF I HAD MY WAY ABOUT IT THEY WOULD REPUBLISH ONLY THOSE OF MY BOOKS WHICH HAVE DOCTRINE MY GALATIANS FOR INSTANCE | <audio class="audio-player" src="zero_shot_tts/famous/obama/obama.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/obama/tts_2830-3979-0007_sampling_sample0.wav" controls preload></audio> |
+| Barack Obama | GRAM ROUGHLY ONE TWENTY EIGHTH OF AN OUNCE | <audio class="audio-player" src="zero_shot_tts/famous/obama/obama.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/obama/tts_8463-294825-0015_sampling_sample0.wav" controls preload></audio> |
+| Theresa May | HE GAVE WAY TO THE OTHERS VERY READILY AND RETREATED UNPERCEIVED BY THE SQUIRE AND MISTRESS FITZOOTH TO THE REAR OF THE TENT | <audio class="audio-player" src="zero_shot_tts/famous/May/tts_61-70968-0011_input1.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/May/tts_61-70968-0011_sampling_sample0.wav" controls preload></audio> |
+| Theresa May | IF FOR A WHIM YOU BEGGAR YOURSELF I CANNOT STAY YOU | <audio class="audio-player" src="zero_shot_tts/famous/May/tts_61-70968-0011_input1.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/May/tts_61-70970-0003_sampling_sample0.wav" controls preload></audio> |
+| Taylor Swift | YOUNG FITZOOTH HAD BEEN COMMANDED TO HIS MOTHER'S CHAMBER SO SOON AS HE HAD COME OUT FROM HIS CONVERSE WITH THE SQUIRE | <audio class="audio-player" src="zero_shot_tts/famous/ts/tts_8555-284449-0020_input1.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/ts/tts_61-70970-0000_sampling_sample0.wav" controls preload></audio> |
+| Taylor Swift | HE WAS IN DEEP CONVERSE WITH THE CLERK AND ENTERED THE HALL HOLDING HIM BY THE ARM | <audio class="audio-player" src="zero_shot_tts/famous/ts/tts_8555-284449-0020_input1.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/ts/tts_61-70970-0007_sampling_sample0.wav" controls preload></audio> |
+| Taylor Swift | REST AND BE STILL UNTIL I WARN YOU | <audio class="audio-player" src="zero_shot_tts/famous/ts/tts_8555-284449-0020_input1.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/ts/tts_61-70970-0017_sampling_sample0.wav" controls preload></audio> |
+| Taylor Swift | THE COMBINED BANDS OF BOTH THE COUNTRIES PLAYED THE MUSIC AND A FINE SUPPER WAS SERVED | <audio class="audio-player" src="zero_shot_tts/famous/ts/tts_8555-284449-0020_input1.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/ts/tts_8555-284449-0020_sampling_sample0.wav" controls preload></audio> |
 
 ### Cloning the person's voice from your daily life
 In this part, we show some case that clone our friends's voice. We directly use our smart phone to record 3 seconds prompts( One use the iphone, the other use VIVO). We directly speak chinese, we expect the model can transfer our voice into English.
 
 | <center> Name </center> | <center>  Content  </center> | <center> Prompt </center>| <center> Generated Speech </center>|
 | -----------     |  -----------     |
-| Girl | AND EMIL MOWED HIS WAY SLOWLY DOWN TOWARD THE CHERRY TREES | <audio src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/yy/tts_237-134500-0014_sampling_sample0.wav" controls preload></audio> |
-| Girl | THE DEPARTURE WAS NOT AT ALL AGREEABLE | <audio src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/yy/tts_672-122797-0024_sampling_sample0.wav" controls preload></audio> |
-| Girl | IT'S NOT PARTICULARLY RARE SHE SAID BUT SOME OF IT WAS MY MOTHER'S |<audio src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/yy/tts_4446-2273-0009_sampling_sample0.wav" controls preload></audio> |
-| Girl | WHAT I MEAN IS THAT I WANT YOU TO PROMISE NEVER TO SEE ME AGAIN NO MATTER HOW OFTEN I COME NO MATTER HOW HARD I BEG |<audio src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/yy/tts_4446-2275-0033_sampling_sample0.wav" controls preload></audio> |
-| Girl |DO YOU KNOW LAKE OH I REALLY CAN'T TELL BUT HE'LL SOON TIRE OF COUNTRY LIFE | <audio src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/yy/tts_5683-32865-0013_sampling_sample0.wav" controls preload></audio> |
-| Boy | THE EARTH IS NOT DEVOID OF RESEMBLANCE TO A JAIL |<audio src="zero_shot_tts/famous/dc/dongchao_prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/dc/tts_4507-16021-0043_sampling_sample0.wav" controls preload></audio> |
-| Boy | INDEED THERE WERE ONLY ONE OR TWO STRANGERS WHO COULD BE ADMITTED AMONG THE SISTERS WITHOUT PRODUCING THE SAME RESULT |<audio src="zero_shot_tts/famous/dc/dongchao_prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/dc/tts_3575-170457-0040_sampling_sample0.wav" controls preload></audio> |
-| Boy | ALSO THERE WAS A STRIPLING PAGE WHO TURNED INTO A MAID |<audio src="zero_shot_tts/famous/dc/dongchao_prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/dc/tts_61-70968-0004_sampling_sample1.wav" controls preload></audio> |
-| Boy | I HAD A NAME I BELIEVE IN MY YOUNG DAYS BUT I HAVE FORGOTTEN IT SINCE I HAVE BEEN IN SERVICE | <audio src="zero_shot_tts/famous/dc/dongchao_prompt.wav" controls preload></audio> | <audio src="zero_shot_tts/famous/dc/tts_3729-6852-0011_sampling_sample1.wav" controls preload></audio> |
+| Girl | AND EMIL MOWED HIS WAY SLOWLY DOWN TOWARD THE CHERRY TREES | <audio class="audio-player" src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/yy/tts_237-134500-0014_sampling_sample0.wav" controls preload></audio> |
+| Girl | THE DEPARTURE WAS NOT AT ALL AGREEABLE | <audio class="audio-player" src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/yy/tts_672-122797-0024_sampling_sample0.wav" controls preload></audio> |
+| Girl | IT'S NOT PARTICULARLY RARE SHE SAID BUT SOME OF IT WAS MY MOTHER'S |<audio class="audio-player" src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/yy/tts_4446-2273-0009_sampling_sample0.wav" controls preload></audio> |
+| Girl | WHAT I MEAN IS THAT I WANT YOU TO PROMISE NEVER TO SEE ME AGAIN NO MATTER HOW OFTEN I COME NO MATTER HOW HARD I BEG |<audio class="audio-player" src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/yy/tts_4446-2275-0033_sampling_sample0.wav" controls preload></audio> |
+| Girl |DO YOU KNOW LAKE OH I REALLY CAN'T TELL BUT HE'LL SOON TIRE OF COUNTRY LIFE | <audio class="audio-player" src="zero_shot_tts/famous/yy/prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/yy/tts_5683-32865-0013_sampling_sample0.wav" controls preload></audio> |
+| Boy | THE EARTH IS NOT DEVOID OF RESEMBLANCE TO A JAIL |<audio class="audio-player" src="zero_shot_tts/famous/dc/dongchao_prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/dc/tts_4507-16021-0043_sampling_sample0.wav" controls preload></audio> |
+| Boy | INDEED THERE WERE ONLY ONE OR TWO STRANGERS WHO COULD BE ADMITTED AMONG THE SISTERS WITHOUT PRODUCING THE SAME RESULT |<audio class="audio-player" src="zero_shot_tts/famous/dc/dongchao_prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/dc/tts_3575-170457-0040_sampling_sample0.wav" controls preload></audio> |
+| Boy | ALSO THERE WAS A STRIPLING PAGE WHO TURNED INTO A MAID |<audio class="audio-player" src="zero_shot_tts/famous/dc/dongchao_prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/dc/tts_61-70968-0004_sampling_sample1.wav" controls preload></audio> |
+| Boy | I HAD A NAME I BELIEVE IN MY YOUNG DAYS BUT I HAVE FORGOTTEN IT SINCE I HAVE BEEN IN SERVICE | <audio class="audio-player" src="zero_shot_tts/famous/dc/dongchao_prompt.wav" controls preload></audio> | <audio class="audio-player" src="zero_shot_tts/famous/dc/tts_3729-6852-0011_sampling_sample1.wav" controls preload></audio> |
 
 
 
@@ -152,13 +158,13 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 
 | <center> Instruction </center> | <center> Source Audio </center> | <center> Generated Audio </center>| 
 | -----------     |  -----------     |
-| Add: loud roar of traffic in the background | <audio src="A_edit/Audit_audio_edit_add_132_input1.wav" controls preload></audio> | <audio src="A_edit/Audit_audio_edit_add_132_sampling_sample0.wav" controls preload></audio> | 
-| Add: a helicopters' engine is running in the background | <audio src="A_edit/gen/Audit_audio_edit_add_142_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_add_142_sampling_sample3.wav" controls preload></audio> | 
-| drop: birds chirping, wings flap | <audio src="A_edit/gen/Audit_audio_edit_drop_151_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_drop_151_sampling_sample0.wav" controls preload></audio> | 
-| Drop:a motorcycle idles nearby at moderate speed | <audio src="A_edit/gen/Audit_audio_edit_drop_273_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_drop_273_sampling_sample0.wav" controls preload></audio> | 
-| super resolution: A clock is ringing a bell | <audio src="A_edit/Audit_audio_edit_super_290_input1.wav" controls preload></audio> | <audio src="A_edit/Audit_audio_edit_super_290_sampling_sample0.wav" controls preload></audio> | 
-| super resolution: A clock is chiming | <audio src="A_edit/gen/Audit_audio_edit_super_14_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_super_14_sampling_sample0.wav" controls preload></audio> | 
-| Super resolution: Man speaking with water sounds | <audio src="A_edit/gen/Audit_audio_edit_super_253_input1.wav" controls preload></audio> | <audio src="A_edit/gen/Audit_audio_edit_super_253_sampling_sample0.wav" controls preload></audio> | 
+| Add: loud roar of traffic in the background | <audio class="audio-player" src="A_edit/Audit_audio_edit_add_132_input1.wav" controls preload></audio> | <audio class="audio-player" src="A_edit/Audit_audio_edit_add_132_sampling_sample0.wav" controls preload></audio> | 
+| Add: a helicopters' engine is running in the background | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_add_142_input1.wav" controls preload></audio> | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_add_142_sampling_sample3.wav" controls preload></audio> | 
+| drop: birds chirping, wings flap | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_drop_151_input1.wav" controls preload></audio> | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_drop_151_sampling_sample0.wav" controls preload></audio> | 
+| Drop:a motorcycle idles nearby at moderate speed | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_drop_273_input1.wav" controls preload></audio> | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_drop_273_sampling_sample0.wav" controls preload></audio> | 
+| super resolution: A clock is ringing a bell | <audio class="audio-player" src="A_edit/Audit_audio_edit_super_290_input1.wav" controls preload></audio> | <audio class="audio-player" src="A_edit/Audit_audio_edit_super_290_sampling_sample0.wav" controls preload></audio> | 
+| super resolution: A clock is chiming | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_super_14_input1.wav" controls preload></audio> | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_super_14_sampling_sample0.wav" controls preload></audio> | 
+| Super resolution: Man speaking with water sounds | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_super_253_input1.wav" controls preload></audio> | <audio class="audio-player" src="A_edit/gen/Audit_audio_edit_super_253_sampling_sample0.wav" controls preload></audio> | 
 
 
 ## Speech dereverberation
@@ -171,12 +177,6 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 | <audio src="RIR/Speech_RIR_simulate_ris_test48_input0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test48_sampling_sample0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test48_input1.wav" controls preload></audio> |
 | <audio src="RIR/Speech_RIR_simulate_ris_test81_input0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test81_sampling_sample0.wav" controls preload></audio> | <audio src="RIR/Speech_RIR_simulate_ris_test81_input1.wav" controls preload></audio> |
 
-
-<style>
-.audio-player {
-  width: 200px;
-}
-</style>
 
 
 ## Speech Edit
