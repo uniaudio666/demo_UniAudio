@@ -174,7 +174,7 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 
 <style>
 .audio-player {
-  width: 100px;
+  width: 200px;
 }
 </style>
 
@@ -183,12 +183,12 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 
 | <center> Content <img width=500/> </center> | <center> Instruction </center> | <center> Generated Speech </center> | <center> Original Audio </center>| 
 | -----------     |  -----------     |
-| Please wait for me, Marie," Emil coaxed. | delete the word 'for' | <audio class="audio-player" src="speech_edit_sample/gen/237_134493_000009_000001.wav" controls preload></audio> | <audio src="speech_edit_sample/org/237_134493_000009_000001.wav" controls preload></audio> | 
-| He is called, as you know, the apostle of the Indies. | replace the word "called" as "named" | <audio src="speech_edit_sample/gen/1089_134686_000032_000004.wav" controls preload></audio> | <audio src="speech_edit_sample/org/1089_134686_000032_000004.wav" controls preload></audio> | 
-| It is thou that must tell me! | delete the word 'tell' | <audio src="speech_edit_sample/gen/1221_135766_000027_000002.wav" controls preload></audio> | <audio src="speech_edit_sample/org/1221_135766_000027_000002.wav" controls preload></audio> | 
-| Bartley leaned over her shoulder, without touching her, and whispered in her | replace the word "shoulder" as  "feet" | <audio src="speech_edit_sample/gen/4446_2273_000051_000000.wav" controls preload></audio> | <audio src="speech_edit_sample/org/4446_2273_000051_000000.wav" controls preload></audio> | 
-| He had three flies on his cast, and, because in these waters there was always | insert a word "large" after "waters" | <audio src="speech_edit_sample/gen/7176_88083_000020_000001.wav" controls preload></audio> | <audio src="speech_edit_sample/org/7176_88083_000020_000001.wav" controls preload></audio> | 
-| They could see that a conflict meant serious results | insert a word "many" after "meant" | <audio src="speech_edit_sample/gen/7729_102255_000012_000006.wav" controls preload></audio> | <audio src="speech_edit_sample/org/7729_102255_000012_000006.wav" controls preload></audio> | 
+| Please wait for me, Marie," Emil coaxed. | delete the word 'for' | <audio class="audio-player" src="speech_edit_sample/gen/237_134493_000009_000001.wav" controls preload></audio> | <audio class="audio-player" src="speech_edit_sample/org/237_134493_000009_000001.wav" controls preload></audio> | 
+| He is called, as you know, the apostle of the Indies. | replace the word "called" as "named" | <audio class="audio-player"  src="speech_edit_sample/gen/1089_134686_000032_000004.wav" controls preload></audio> | <audio class="audio-player" src="speech_edit_sample/org/1089_134686_000032_000004.wav" controls preload></audio> | 
+| It is thou that must tell me! | delete the word 'tell' | <audio class="audio-player" src="speech_edit_sample/gen/1221_135766_000027_000002.wav" controls preload></audio> | <audio class="audio-player" src="speech_edit_sample/org/1221_135766_000027_000002.wav" controls preload></audio> | 
+| Bartley leaned over her shoulder, without touching her, and whispered in her | replace the word "shoulder" as  "feet" | <audio class="audio-player" src="speech_edit_sample/gen/4446_2273_000051_000000.wav" controls preload></audio> | <audio class="audio-player" src="speech_edit_sample/org/4446_2273_000051_000000.wav" controls preload></audio> | 
+| He had three flies on his cast, and, because in these waters there was always | insert a word "large" after "waters" | <audio class="audio-player" src="speech_edit_sample/gen/7176_88083_000020_000001.wav" controls preload></audio> | <audio class="audio-player" src="speech_edit_sample/org/7176_88083_000020_000001.wav" controls preload></audio> | 
+| They could see that a conflict meant serious results | insert a word "many" after "meant" | <audio class="audio-player" src="speech_edit_sample/gen/7729_102255_000012_000006.wav" controls preload></audio> | <audio class="audio-player" src="speech_edit_sample/org/7729_102255_000012_000006.wav" controls preload></audio> | 
 
 ## Chinese TTS 
 
