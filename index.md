@@ -195,7 +195,7 @@ In the following, we find a moive clips from bilibili (https://www.bilibili.com/
 
 ## Chinese TTS 
 
-| <center> Content (words of song) </center> | <center> Generated Sing </center>|
+| <center> Content </center> | <center> Generated Speech </center>|
 | -----------     |  -----------     |
 | 你投了票的 | <audio src="zero_shot_tts/chinese/sing_SSB0009_SSB00090400_sampling_sample1.wav" controls preload></audio> |
 | 未来在吸引球迷和赞助商以及推广乒乓球运动方面 | <audio src="zero_shot_tts/chinese/sing_SSB0851_SSB08510142_sampling_sample0.wav" controls preload></audio> |
