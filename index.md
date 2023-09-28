@@ -1,6 +1,7 @@
 # <center> UniAudio: An Audio Foundation Model Toward Universal Audio Generation </center>
 
 <center> anonymous </center>
+**[Source Code](https://github.com/uniaudio666/UniAudio)**
 
 ## Abstract
 Language models (LMs) have demonstrated the capability to handle a variety of generative tasks. This paper presents the UniAudio system, which, unlike prior task-specific approaches, leverages LMs techniques to generate multiple types of audio (including speech, sounds, music, and singing) with given input conditions. 
