@@ -3,11 +3,11 @@
 <center> anonymous </center>
 <center> ** [Source Code](https://github.com/uniaudio666/UniAudio) ** </center>
 
-## Abstract
+## Introduction
 Language models (LMs) have demonstrated the capability to handle a variety of generative tasks. This paper presents the UniAudio system, which, unlike prior task-specific approaches, leverages LMs techniques to generate multiple types of audio (including speech, sounds, music, and singing) with given input conditions. 
 UniAudio 1) first tokenizes all types of target audio along with other condition modalities, 2) concatenates source-target pair as a single sequence, and 3) performs next-token prediction using LMs. Also, a multi-scale Transformer model is proposed to handle the overly long sequences caused by the residual vector quantization based neural codec in tokenization. Training of UniAudio is scaled up to 165K hours of audio and 1B parameters, based on all generative tasks, aiming to obtain sufficient prior knowledge not only in the intrinsic properties of audio but also the inter-relationship between audio and other modalities. Therefore, the trained UniAudio model has the potential to become a foundation model for universal audio generation: it shows strong capability in all trained tasks and can seamlessly support new audio generation tasks after simple fine-tuning. Experiments demonstrate that UniAudio achieves state-of-the-art or at least competitive results on most of the 11 tasks. Demo and code are released.
 
-## Introduction
+## Overview
 The overview of UniAudio as following picture shows.
 ![The overview of UniAudio](fig/overview2.png)
 In the following, we will show some generated samples by our proposed method. 
