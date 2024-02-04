@@ -4,12 +4,14 @@
 <center> ** [Source Code](https://github.com/uniaudio666/UniAudio) ** </center>
 
 ## Introduction
-Large Language Models (LLMs) have demonstrated the capability to handle a variety of generative tasks. This paper presents the UniAudio system, which leverages LLM techniques to generate multiple types of audio (including speech, sound, music, and singing) with given input conditions. 
-UniAudio 1) first tokenizes all types of target audio along with other condition modalities, then concatenates condition-target pair as a single sequence, and 2) performs next-token prediction using LLMs. Also, a multi-scale Transformer model is proposed to handle the overly long sequences caused by the residual vector quantization-based neural codec in tokenization. Training of UniAudio is scaled up to 165K hours of audio and 1B parameters, based on 7 audio generation tasks, aiming to obtain sufficient prior knowledge not only in the intrinsic properties of audio but also the inter-relationship between audio and other modalities. The trained UniAudio model has the potential to become a foundation model for a range of audio generation tasks: it shows strong capability in all trained tasks and can seamlessly support new audio generation tasks after simple fine-tuning. Experiments demonstrate that UniAudio achieves state-of-the-art or at least competitive results on most of the 11 audio generation tasks (7 training task and 4 fine-tuning tasks). 
+Audio generation is a major branch of generative AI research. Compared with prior works in this area that are commonly task-specific with heavy domain knowledge, this paper advocates building universal audio generation models that can handle various tasks in a unified manner.
+As recent research on large language models (LLMs) has demonstrated their strong ability to handle multiple tasks, this work presents UniAudio, an LLM-based audio generation model that supports a wide range of audio generation tasks.
+Based on various input conditions, such as phoneme, text description, or audio itself, UniAudio can generate speech, sound, music, and singing voice. 
+The proposed UniAudio is built with 100k hours of multi-source open-available audio data and is scaled to 1B parameters. The audio tokenization method and language model architecture are also specifically designed for both performance and efficiency. Experimentally, UniAuido supports 11 audio generation tasks and achieves competitive results on all tasks consistently. We also show that UniAudio can support new tasks seamlessly via simple fine-tuning.
 
 ## Overview
 The overview of UniAudio as following picture shows.
-![The overview of UniAudio](fig/overview2.png)
+![The overview of UniAudio](fig/over.png)
 In the following, we will show some generated samples by our proposed method. 
 
 <style>
@@ -22,7 +24,7 @@ In the following, we will show some generated samples by our proposed method.
 </style>
 
 ## Zero-shot TTS.
-In the following, we first show some case in LibriTTS test clean set. To make our results can be reproduced, we will release all of the generated LibriTTS clean set in the google drive.
+In the following, we first show some case in LibriTTS test clean set. 
 
 | <center>  Content (The transcirption of the target audio) </center> | <center> Prompt </center> | <center> Generated Speech </center>| <center> GT Speech </center>|
 | -----------------------     |  -----------   | ------ | ----- |-------|
