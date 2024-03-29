@@ -23,6 +23,9 @@ In the following, we will show some generated samples by our proposed method.
 }
 </style>
 
+## Emotional TTS 
+Please refer to get the part of RAVDESS dataset inference samples. (https://github.com/uniaudio666/demo_UniAudio/blob/master/emotionTTS.zip)
+
 ## Zero-shot TTS.
 In the following, we first show some case in LibriTTS test clean set. 
 
